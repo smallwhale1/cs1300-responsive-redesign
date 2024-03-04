@@ -1,15 +1,17 @@
 /* Horizontal padding: 2rem */
 
 /* Global */
+
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Alegreya Sans", sans-serif;
-  font-style: normal; */
+  font-family: "Alegreya Sans", sans-serif;
+  font-style: normal;
 }
 
 body {
   background-color: #fff6ec;
+  padding-bottom: 2rem;
 }
 
 /* Utility */
@@ -22,8 +24,14 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 1px;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff3a1b;
 }
 
 section {
@@ -65,13 +73,6 @@ section {
   font-weight: 600;
   font-style: normal;
 }
-
-/* .logo {
-  position: absolute;
-  top: 25%;
-  left: calc(50% - 50px);
-  border-radius: 0.5rem;
-} */
 
 /* Hero */
 
@@ -115,7 +116,7 @@ section {
 }
 
 .menu-item {
-  width: 350px;
+  width: 400px;
   height: 300px;
   color: #ffffff;
   border-radius: 1rem;
@@ -131,4 +132,65 @@ section {
 .cupcake-item {
   background-image: linear-gradient(to bottom, #1a0b0080, #1a0b0080),
     url("assets/images/responsive-redesign-cupcakes.jpg");
+}
+
+/* Hours & Location */
+
+.hours-location-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.map-location {
+  border-radius: 1rem;
+}
+
+.hours {
+  flex-grow: 1;
+  background-color: #ffdec8;
+  border-radius: 1rem;
+}
+
+/* Testimonials */
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.testimonial-card {
+  position: relative;
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 5rem 2rem 4rem 2rem;
+  border-radius: 1rem;
+}
+
+.testimonial-name {
+  font-size: 1.5rem;
+}
+
+.testimonial-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ff3a1b;
+}
+
+.testimonial-quote {
+  font-size: 1.25rem;
+}
+
+.profile-img {
+  position: absolute;
+  top: -32.5px;
+  left: calc(50% - 32.5px);
+  border-radius: 50%;
+  border: 2px solid #ff3a1b;
 }
