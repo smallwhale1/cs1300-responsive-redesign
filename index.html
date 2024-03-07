@@ -26,240 +26,258 @@
         <li class="nav-item nav-item-link">
           <a class="nav-link">special orders</a>
         </li>
-        <li class="nav-item bar-menu">
+        <li id="bar-menu" class="nav-item bar-menu">
           <i class="fa-solid fa-bars fa-lg"></i>
+        </li>
+      </ul>
+      <ul class="nav-links-mobile" id="nav-links-mobile">
+        <li class="nav-item-link-mobile">
+          <a class="nav-link">gallery</a>
+        </li>
+        <li class="nav-item-link-mobile">
+          <a class="nav-link">menu</a>
+        </li>
+        <li class="nav-item-link-mobile">
+          <a class="nav-link">special orders</a>
+        </li>
+        <li id="x-icon" class="nav-item-link-mobile">
+          <i class="fa-solid fa-x fa-lg"></i>
         </li>
       </ul>
     </nav>
     <!-- Hero section -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1 class="hero-heading">Exceptional Cakes and Desserts</h1>
-        <h2 class="hero-p alex">Proudly Serving Davis and Surrounding Areas</h2>
-        <button id="contact-btn">contact us</button>
-      </div>
-    </section>
-    <!-- Welcome -->
-    <section class="welcome">
-      <div class="welcome-text">
-        <h3 class="welcome-heading">Welcome to Let Them Eat Cake</h3>
-        <p class="welcome-p">
-          At Let Them Eat Cake, we offer a delightful range of creative cupcake
-          flavors and other desserts. We bake from scratch daily using quality,
-          fresh, and in season ingredients.​ We know that people have different
-          food preferences and needs. We offer vegan cupcakes, gluten free
-          cupcakes, and nut free cupcakes every day.​
+    <div id="content-wrapper">
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-heading">Exceptional Cakes and Desserts</h1>
+          <h2 class="hero-p alex">
+            Proudly Serving Davis and Surrounding Areas
+          </h2>
+          <button id="contact-btn">contact us</button>
+        </div>
+      </section>
+      <!-- Welcome -->
+      <section class="welcome">
+        <div class="welcome-text">
+          <h3 class="welcome-heading">Welcome to Let Them Eat Cake</h3>
+          <p class="welcome-p">
+            At Let Them Eat Cake, we offer a delightful range of creative
+            cupcake flavors and other desserts. We bake from scratch daily using
+            quality, fresh, and in season ingredients.​ We know that people have
+            different food preferences and needs. We offer vegan cupcakes,
+            gluten free cupcakes, and nut free cupcakes every day.​
+          </p>
+          <p class="welcome-p">
+            ​Whether for a party, wedding, or just to treat yourself, we have
+            exceptional desserts for you.
+          </p>
+          <div class="order-btn-container">
+            <button>order now</button>
+          </div>
+        </div>
+        <img
+          alt="wedding cake with flowers"
+          class="welcome-img"
+          width="400"
+          src="assets/images/let-them-eat-cake.jpeg"
+        />
+      </section>
+      <!-- Menu preview -->
+      <section id="our-desserts">
+        <h3 class="section-heading">Our Desserts</h3>
+        <!-- Image buttons that link to relevant sections of the menu -->
+        <div class="menu-items">
+          <div class="menu-item cupcake-item">cupcakes</div>
+          <div class="menu-item cake-item">cakes</div>
+          <div class="menu-item cookie-item">cookies</div>
+        </div>
+      </section>
+      <!-- Hours & Location -->
+      <section id="hours-location">
+        <h3 class="section-heading">Hours & Location</h3>
+        <div class="hours-location-content">
+          <div class="hours">
+            <div class="hour-row">
+              <p class="day">mon</p>
+              <p class="hour">12PM - 6PM</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">tues</p>
+              <p class="hour">closed</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">wed</p>
+              <p class="hour">12AM - 6PM</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">thurs</p>
+              <p class="hour">12AM - 6PM</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">fri</p>
+              <p class="hour">12AM - 6PM</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">sat</p>
+              <p class="hour">10AM-4PM</p>
+            </div>
+            <div class="hour-row">
+              <p class="day">sun</p>
+              <p class="hour">10AM-4PM</p>
+            </div>
+          </div>
+          <!-- Google maps embedding of location -->
+          <iframe
+            class="map-location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12482.107266004205!2d-121.7619037559249!3d38.54467443449613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80852976fb22d033%3A0x3511c56bb9016159!2sLet%20Them%20Eat%20Cake!5e0!3m2!1sen!2sus!4v1709565715422!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact-section" class="contact">
+        <h3 class="section-heading get-in-touch">Get in Touch</h3>
+        <p class="p-text">Send us an email. We are always happy to help you.</p>
+        <form class="form">
+          <div class="input-row">
+            <div class="input-wrapper">
+              <label for="first-name">First Name</label>
+              <input
+                id="first-name"
+                name="first-name"
+                type="text"
+                class="input-field"
+                placeholder="First Name..."
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="last-name">Last Name</label>
+              <input
+                id="last-name"
+                name="last-name"
+                type="text"
+                class="input-field"
+                placeholder="Last Name..."
+                required
+              />
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                class="input-field"
+                placeholder="Email..."
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="phone-number">Phone Number</label>
+              <input
+                id="phone-number"
+                name="phone-number"
+                type="text"
+                class="input-field"
+                placeholder="Phone Number..."
+                required
+              />
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-wrapper">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="message-area"
+                placeholder="Message..."
+              ></textarea>
+            </div>
+          </div>
+          <button class="submit-btn">submit</button>
+        </form>
+        <p class="p-text">
+          Phone: (530)750-2253 · Email: letthemeatcakedavis@gmail.com
         </p>
-        <p class="welcome-p">
-          ​Whether for a party, wedding, or just to treat yourself, we have
-          exceptional desserts for you.
-        </p>
-        <div class="order-btn-container">
-          <button>order now</button>
-        </div>
-      </div>
-      <img
-        alt="wedding cake with flowers"
-        class="welcome-img"
-        width="400"
-        src="assets/images/let-them-eat-cake.jpeg"
-      />
-    </section>
-    <!-- Menu preview -->
-    <section id="our-desserts">
-      <h3 class="section-heading">Our Desserts</h3>
-      <!-- Image buttons that link to relevant sections of the menu -->
-      <div class="menu-items">
-        <div class="menu-item cupcake-item">cupcakes</div>
-        <div class="menu-item cake-item">cakes</div>
-        <div class="menu-item cookie-item">cookies</div>
-      </div>
-    </section>
-    <!-- Hours & Location -->
-    <section id="hours-location">
-      <h3 class="section-heading">Hours & Location</h3>
-      <div class="hours-location-content">
-        <div class="hours">
-          <div class="hour-row">
-            <p class="day">mon</p>
-            <p class="hour">12PM - 6PM</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">tues</p>
-            <p class="hour">closed</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">wed</p>
-            <p class="hour">12AM - 6PM</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">thurs</p>
-            <p class="hour">12AM - 6PM</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">fri</p>
-            <p class="hour">12AM - 6PM</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">sat</p>
-            <p class="hour">10AM-4PM</p>
-          </div>
-          <div class="hour-row">
-            <p class="day">sun</p>
-            <p class="hour">10AM-4PM</p>
-          </div>
-        </div>
-        <!-- Google maps embedding of location -->
-        <iframe
-          class="map-location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12482.107266004205!2d-121.7619037559249!3d38.54467443449613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80852976fb22d033%3A0x3511c56bb9016159!2sLet%20Them%20Eat%20Cake!5e0!3m2!1sen!2sus!4v1709565715422!5m2!1sen!2sus"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact-section" class="contact">
-      <h3 class="section-heading get-in-touch">Get in Touch</h3>
-      <p class="p-text">Send us an email. We are always happy to help you.</p>
-      <form class="form">
-        <div class="input-row">
-          <div class="input-wrapper">
-            <label for="first-name">First Name</label>
-            <input
-              id="first-name"
-              name="first-name"
-              type="text"
-              class="input-field"
-              placeholder="First Name..."
-              required
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <h3 class="section-heading">Testimonials</h3>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <h4 class="testimonial-name">Kevin Park</h4>
+            <p class="testimonial-label">UC Davis Student</p>
+            <p class="testimonial-quote">
+              Staff is always helpful and nice. we ordered a chocolate ganache
+              cake for one of our international programs and the cake was over
+              the top GREAT!
+            </p>
+            <img
+              width="100"
+              height="100"
+              class="profile-img"
+              src="assets/images/profile.jpg"
+              alt="young asian man"
             />
           </div>
-          <div class="input-wrapper">
-            <label for="last-name">Last Name</label>
-            <input
-              id="last-name"
-              name="last-name"
-              type="text"
-              class="input-field"
-              placeholder="Last Name..."
-              required
+          <div class="testimonial-card">
+            <h4 class="testimonial-name">Maria Davis</h4>
+            <p class="testimonial-label">Davis Local</p>
+            <p class="testimonial-quote">
+              They make a new selection of cupcakes on Wednesdays and always
+              have one vegan option. You can custom order beautifully decorated
+              cakes (including vegan cakes)!
+            </p>
+            <img
+              width="100"
+              height="100"
+              class="profile-img"
+              src="assets/images/profile2.jpg"
+              alt="young blonde woman"
+            />
+          </div>
+          <div class="testimonial-card">
+            <h4 class="testimonial-name">Joshua Brett</h4>
+            <p class="testimonial-label">Local Musician</p>
+            <p class="testimonial-quote">
+              My daughter chose to have cupcakes for her birthday instead of the
+              standard cake. We chose Let them eat cake and they didn't
+              disappoint.
+            </p>
+            <img
+              width="100"
+              height="100"
+              class="profile-img"
+              src="assets/images/profile3.jpg"
+              alt="young blonde male"
             />
           </div>
         </div>
-        <div class="input-row">
-          <div class="input-wrapper">
-            <label for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="text"
-              class="input-field"
-              placeholder="Email..."
-              required
-            />
-          </div>
-          <div class="input-wrapper">
-            <label for="phone-number">Phone Number</label>
-            <input
-              id="phone-number"
-              name="phone-number"
-              type="text"
-              class="input-field"
-              placeholder="Phone Number..."
-              required
-            />
-          </div>
+      </section>
+      <!-- Chat Icon -->
+      <span class="chat-btn">
+        <i class="fa-regular fa-comment-dots fa-xl chat-icon"></i>
+      </span>
+      <!-- Footer -->
+      <footer>
+        <p>Copyright © 2024 All Rights Reserved.</p>
+        <div class="socials">
+          <i class="fa-brands fa-facebook fa-lg icon-btn"></i>
+          <i class="fa-brands fa-instagram fa-lg icon-btn"></i>
+          <i class="fa-brands fa-google-plus fa-lg icon-btn"></i>
+          <i class="fa-brands fa-yelp fa-lg icon-btn"></i>
         </div>
-        <div class="input-row">
-          <div class="input-wrapper">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="message-area"
-              placeholder="Message..."
-            ></textarea>
-          </div>
-        </div>
-        <button class="submit-btn">submit</button>
-      </form>
-      <p class="p-text">
-        Phone: (530)750-2253 · Email: letthemeatcakedavis@gmail.com
-      </p>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials">
-      <h3 class="section-heading">Testimonials</h3>
-      <div class="testimonial-cards">
-        <div class="testimonial-card">
-          <h4 class="testimonial-name">Kevin Park</h4>
-          <p class="testimonial-label">UC Davis Student</p>
-          <p class="testimonial-quote">
-            Staff is always helpful and nice. we ordered a chocolate ganache
-            cake for one of our international programs and the cake was over the
-            top GREAT!
-          </p>
-          <img
-            width="100"
-            height="100"
-            class="profile-img"
-            src="assets/images/profile.jpg"
-            alt="young asian man"
-          />
-        </div>
-        <div class="testimonial-card">
-          <h4 class="testimonial-name">Maria Davis</h4>
-          <p class="testimonial-label">Davis Local</p>
-          <p class="testimonial-quote">
-            They make a new selection of cupcakes on Wednesdays and always have
-            one vegan option. You can custom order beautifully decorated cakes
-            (including vegan cakes)!
-          </p>
-          <img
-            width="100"
-            height="100"
-            class="profile-img"
-            src="assets/images/profile2.jpg"
-            alt="young blonde woman"
-          />
-        </div>
-        <div class="testimonial-card">
-          <h4 class="testimonial-name">Joshua Brett</h4>
-          <p class="testimonial-label">Local Musician</p>
-          <p class="testimonial-quote">
-            My daughter chose to have cupcakes for her birthday instead of the
-            standard cake. We chose Let them eat cake and they didn't
-            disappoint.
-          </p>
-          <img
-            width="100"
-            height="100"
-            class="profile-img"
-            src="assets/images/profile3.jpg"
-            alt="young blonde male"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Chat Icon -->
-    <button class="chat-btn">
-      <i class="fa-regular fa-comment-dots fa-xl chat-icon"></i>
-    </button>
-    <!-- Footer -->
-    <footer>
-      <p>Copyright © 2024 All Rights Reserved.</p>
-      <div class="socials">
-        <i class="fa-brands fa-facebook fa-lg icon-btn"></i>
-        <i class="fa-brands fa-instagram fa-lg icon-btn"></i>
-        <i class="fa-brands fa-google-plus fa-lg icon-btn"></i>
-        <i class="fa-brands fa-yelp fa-lg icon-btn"></i>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script
       src="https://kit.fontawesome.com/3bade08e57.js"
       crossorigin="anonymous"

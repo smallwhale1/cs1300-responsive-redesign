@@ -105,6 +105,39 @@ label {
   cursor: pointer;
 }
 
+.nav-links-mobile {
+  list-style-type: none;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff6ec;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.nav-links-mobile-shown {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.nav-item-link-mobile {
+  position: relative;
+  padding: 2rem;
+  list-style-type: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item-link-mobile:hover {
+  background-color: #ffd3c8;
+}
+
 .bar-menu {
   display: none;
 }
@@ -141,7 +174,6 @@ label {
 
 .hero-heading {
   font-size: 4rem;
-  font-weight: 500;
 }
 
 .hero-p {
@@ -216,7 +248,7 @@ label {
 
 .cupcake-item {
   background-image: linear-gradient(to bottom, #481e0080, #481e0080),
-    url("assets/images/responsive-redesign-cupcakes.jpg");
+    url("assets/images/cupcakes.jpg");
 }
 
 .cake-item {
@@ -399,6 +431,11 @@ footer {
 
 /* Chat button */
 .chat-btn {
+  background-color: #df3202;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
   padding: 1.25rem;
   color: #ffffff;
   border-radius: 50%;
@@ -406,6 +443,11 @@ footer {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
+}
+
+.chat-btn:hover {
+  background-color: #bf2900;
+  scale: 1.02;
 }
 
 .chat-icon {
